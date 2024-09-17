@@ -8,13 +8,15 @@ public class Exercise2a {
   /**
    * Given an array, take the last element and put it on the front
    *
-   * <p>e.g. {"x", "y", "z"} => {"z", "x", "y"}
+   * <p>
+   * e.g. {"x", "y", "z"} => {"z", "x", "y"}
    *
    * @param {List<T>} list - The input list
    * @returns {List<T>} The list with the last element at the front
    */
   public static <T> List<T> arrayRotate(List<T> list) {
-    // TODO
-    return null;
+    var last = list.remove(list.size() - 1);
+    list.addFirst(last);
+    return list;
   }
 }

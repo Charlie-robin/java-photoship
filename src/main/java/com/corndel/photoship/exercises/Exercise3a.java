@@ -6,13 +6,14 @@ public class Exercise3a {
   /**
    * Outputs a string saying "Hello, my name is NAME!" with the name in uppercase.
    *
-   * <p>e.g. ("Abdi") => "Hello, my name is ABDI!"
+   * <p>
+   * e.g. ("Abdi") => "Hello, my name is ABDI!"
    *
    * @param {String} name - The name
    * @returns {String} The greeting string with uppercase name interpolated
    */
   public static String nameTag(String name) {
     // TODO
-    return "TODO";
+    return String.format("Hello, my name is %s!", name.toUpperCase());
   }
 }
